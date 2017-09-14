@@ -5,16 +5,16 @@
   
   <title>JavaScript中对象属性的定义及读取 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="12var canvas = document.getElementById(&quot;canvas&quot;);var context = canvas.getContext(&quot;2d&quot;);">
+  <meta name="description" content="123456789101112131415161718192021222324252627282930313233343536//属性的定义var book = &amp;#123;&amp;#125;;Object.defineProperties(book,&amp;#123;    _year:&amp;#123;        writable: true,        value:2004,    &amp;#125;,">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript中对象属性的定义及读取">
 <meta property="og:url" content="http://yoursite.com/2017/09/10/CSS布局/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="12var canvas = document.getElementById(&quot;canvas&quot;);var context = canvas.getContext(&quot;2d&quot;);">
-<meta property="og:updated_time" content="2017-09-14T12:03:25.075Z">
+<meta property="og:description" content="123456789101112131415161718192021222324252627282930313233343536//属性的定义var book = &amp;#123;&amp;#125;;Object.defineProperties(book,&amp;#123;    _year:&amp;#123;        writable: true,        value:2004,    &amp;#125;,">
+<meta property="og:updated_time" content="2017-09-14T12:08:49.306Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript中对象属性的定义及读取">
-<meta name="twitter:description" content="12var canvas = document.getElementById(&quot;canvas&quot;);var context = canvas.getContext(&quot;2d&quot;);">
+<meta name="twitter:description" content="123456789101112131415161718192021222324252627282930313233343536//属性的定义var book = &amp;#123;&amp;#125;;Object.defineProperties(book,&amp;#123;    _year:&amp;#123;        writable: true,        value:2004,    &amp;#125;,">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -52,9 +52,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -85,12 +85,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> canvas = <span class="built_in">document</span>.getElementById(<span class="string">"canvas"</span>);</div><div class="line"><span class="keyword">var</span> context = canvas.getContext(<span class="string">"2d"</span>);</div></pre></td></tr></table></figure>
+        <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//属性的定义</span></div><div class="line"><span class="keyword">var</span> book = &#123;&#125;;</div><div class="line"></div><div class="line"><span class="built_in">Object</span>.defineProperties(book,&#123;</div><div class="line">    _year:&#123;</div><div class="line">        writable: <span class="literal">true</span>,</div><div class="line">        value:<span class="number">2004</span>,</div><div class="line">    &#125;,</div><div class="line"></div><div class="line">    edition:&#123;</div><div class="line">        writable: <span class="literal">true</span>,</div><div class="line">        value:<span class="number">1</span></div><div class="line">    &#125;,</div><div class="line">    year:&#123;</div><div class="line">        get: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">this</span>._year;</div><div class="line">        &#125;,</div><div class="line">        set: <span class="function"><span class="keyword">function</span>(<span class="params">newValue</span>)</span>&#123;</div><div class="line">            <span class="keyword">if</span>(newValue &gt; <span class="number">2004</span>)&#123;</div><div class="line">                <span class="keyword">this</span>._year = newValue;</div><div class="line">                <span class="keyword">this</span>.edition += newValue - <span class="number">2004</span>;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="comment">//属性的读取</span></div><div class="line"><span class="keyword">var</span> descriptor1 = <span class="built_in">Object</span>.getOwnPropertyDescriptor(book,<span class="string">"_year"</span>);</div><div class="line"><span class="built_in">console</span>.log(descriptor1.value);<span class="comment">//2004</span></div><div class="line"><span class="built_in">console</span>.log(descriptor1.configurable);<span class="comment">//非直接定义在对象上的属性默认configurable为false</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> descriptor1.get);<span class="comment">//"undefined"</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> descriptor2 = <span class="built_in">Object</span>.getOwnPropertyDescriptor(book,<span class="string">"year"</span>);</div><div class="line"><span class="built_in">console</span>.log(descriptor2.value);<span class="comment">//undefined</span></div><div class="line"><span class="built_in">console</span>.log(descriptor2.enumerable);<span class="comment">//非直接定义在对象上的属性默认enumerable为false</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> descriptor2.get);<span class="comment">//"function"</span></div></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/09/10/CSS布局/" data-id="cj7kes3yr0000xwnl9iwzx488" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/09/10/CSS布局/" data-id="cj7kewegg0000ognlvgftc9n9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -101,7 +101,7 @@
   
   
     <a href="/2017/09/10/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Ancien</strong>
+      <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">Hello World</div>
     </a>
   
@@ -134,7 +134,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
@@ -159,7 +159,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 John Doe<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
