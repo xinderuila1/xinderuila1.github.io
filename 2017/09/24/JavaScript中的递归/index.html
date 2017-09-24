@@ -79,7 +79,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="JavaScript,对象定义,对象读取," />
+  <meta name="keywords" content="JavaScript,递归," />
 
 
 
@@ -95,18 +95,18 @@
 
 
 
-<meta name="description" content="123456789101112131415161718192021222324252627282930313233343536//属性的定义var book = &amp;#123;&amp;#125;;Object.defineProperties(book,&amp;#123;    _year:&amp;#123;        writable: true,        value:2004,    &amp;#125;,">
-<meta name="keywords" content="JavaScript,对象定义,对象读取">
+<meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243// 递归// tips：1.递归是node后端实现同步的方式之一；//      2.使用函数名递归的调用自身是危险的，因为函数名可能会发生变化（可能被置为null，通知垃圾回收例程将其清除）；function factorial(num)&amp;#">
+<meta name="keywords" content="JavaScript,递归">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript中对象属性的定义及读取">
-<meta property="og:url" content="http://yoursite.com/2017/09/10/JavaScript中对象属性的定义及读取/index.html">
+<meta property="og:title" content="JavaScript中的递归">
+<meta property="og:url" content="http://yoursite.com/2017/09/24/JavaScript中的递归/index.html">
 <meta property="og:site_name" content="Xinderuila&#39;s Blog">
-<meta property="og:description" content="123456789101112131415161718192021222324252627282930313233343536//属性的定义var book = &amp;#123;&amp;#125;;Object.defineProperties(book,&amp;#123;    _year:&amp;#123;        writable: true,        value:2004,    &amp;#125;,">
+<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243// 递归// tips：1.递归是node后端实现同步的方式之一；//      2.使用函数名递归的调用自身是危险的，因为函数名可能会发生变化（可能被置为null，通知垃圾回收例程将其清除）；function factorial(num)&amp;#">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-16T10:25:13.781Z">
+<meta property="og:updated_time" content="2017-09-24T10:58:31.290Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JavaScript中对象属性的定义及读取">
-<meta name="twitter:description" content="123456789101112131415161718192021222324252627282930313233343536//属性的定义var book = &amp;#123;&amp;#125;;Object.defineProperties(book,&amp;#123;    _year:&amp;#123;        writable: true,        value:2004,    &amp;#125;,">
+<meta name="twitter:title" content="JavaScript中的递归">
+<meta name="twitter:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243// 递归// tips：1.递归是node后端实现同步的方式之一；//      2.使用函数名递归的调用自身是危险的，因为函数名可能会发生变化（可能被置为null，通知垃圾回收例程将其清除）；function factorial(num)&amp;#">
 
 
 
@@ -136,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/09/10/JavaScript中对象属性的定义及读取/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/09/24/JavaScript中的递归/"/>
 
 
 
 
 
-  <title>JavaScript中对象属性的定义及读取 | Xinderuila's Blog</title>
+  <title>JavaScript中的递归 | Xinderuila's Blog</title>
   
 
 
@@ -259,7 +259,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/10/JavaScript中对象属性的定义及读取/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/24/JavaScript中的递归/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yu Gao">
@@ -276,7 +276,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">JavaScript中对象属性的定义及读取</h1>
+          <h1 class="post-title" itemprop="name headline">JavaScript中的递归</h1>
         
 
         <div class="post-meta">
@@ -288,8 +288,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-10T18:09:58+08:00">
-                2017-09-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-24T18:57:58+08:00">
+                2017-09-24
               </time>
             
 
@@ -326,8 +326,7 @@
       
 
       
-        <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//属性的定义</span></div><div class="line"><span class="keyword">var</span> book = &#123;&#125;;</div><div class="line"></div><div class="line"><span class="built_in">Object</span>.defineProperties(book,&#123;</div><div class="line">    _year:&#123;</div><div class="line">        writable: <span class="literal">true</span>,</div><div class="line">        value:<span class="number">2004</span>,</div><div class="line">    &#125;,</div><div class="line"></div><div class="line">    edition:&#123;</div><div class="line">        writable: <span class="literal">true</span>,</div><div class="line">        value:<span class="number">1</span></div><div class="line">    &#125;,</div><div class="line">    year:&#123;</div><div class="line">        get: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">this</span>._year;</div><div class="line">        &#125;,</div><div class="line">        set: <span class="function"><span class="keyword">function</span>(<span class="params">newValue</span>)</span>&#123;</div><div class="line">            <span class="keyword">if</span>(newValue &gt; <span class="number">2004</span>)&#123;</div><div class="line">                <span class="keyword">this</span>._year = newValue;</div><div class="line">                <span class="keyword">this</span>.edition += newValue - <span class="number">2004</span>;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="comment">//属性的读取</span></div><div class="line"><span class="keyword">var</span> descriptor1 = <span class="built_in">Object</span>.getOwnPropertyDescriptor(book,<span class="string">"_year"</span>);</div><div class="line"><span class="built_in">console</span>.log(descriptor1.value);<span class="comment">//2004</span></div><div class="line"><span class="built_in">console</span>.log(descriptor1.configurable);<span class="comment">//非直接定义在对象上的属性默认configurable为false</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> descriptor1.get);<span class="comment">//"undefined"</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> descriptor2 = <span class="built_in">Object</span>.getOwnPropertyDescriptor(book,<span class="string">"year"</span>);</div><div class="line"><span class="built_in">console</span>.log(descriptor2.value);<span class="comment">//undefined</span></div><div class="line"><span class="built_in">console</span>.log(descriptor2.enumerable);<span class="comment">//非直接定义在对象上的属性默认enumerable为false</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> descriptor2.get);<span class="comment">//"function"</span></div></pre></td></tr></table></figure>
-
+        <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 递归</span></div><div class="line"><span class="comment">// tips：1.递归是node后端实现同步的方式之一；</span></div><div class="line"><span class="comment">//      2.使用函数名递归的调用自身是危险的，因为函数名可能会发生变化（可能被置为null，通知垃圾回收例程将其清除）；</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">factorial</span>(<span class="params">num</span>)</span>&#123;</div><div class="line">    <span class="keyword">if</span>(num &lt;= <span class="number">1</span>)&#123;</div><div class="line">        <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">    &#125;<span class="keyword">else</span>&#123;</div><div class="line">        <span class="keyword">return</span> num * factorial(num - <span class="number">1</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> anotherFactorial = factorial;</div><div class="line">factorial = <span class="literal">null</span>;</div><div class="line"><span class="built_in">console</span>.log(anotherFactorial(<span class="number">4</span>));<span class="comment">//TypeError: factorial is not a function</span></div><div class="line"></div><div class="line"><span class="comment">// 改进的递归1</span></div><div class="line"><span class="comment">// tips：1.arguments.callee是一个指向正在被执行函数的指针；</span></div><div class="line"><span class="comment">//      2.严格模式下，不能通过脚本访问arguments.callee；</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">factorial</span>(<span class="params">num</span>)</span>&#123;</div><div class="line">    <span class="keyword">if</span>(num &lt;= <span class="number">1</span>)&#123;</div><div class="line">        <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">    &#125;<span class="keyword">else</span>&#123;</div><div class="line">        <span class="keyword">return</span> num * <span class="built_in">arguments</span>.callee(num - <span class="number">1</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> anotherFactorial = factorial;</div><div class="line">factorial = <span class="literal">null</span>;</div><div class="line"><span class="built_in">console</span>.log(anotherFactorial(<span class="number">4</span>));<span class="comment">//24</span></div><div class="line"></div><div class="line"><span class="comment">// 改进的递归2</span></div><div class="line"><span class="comment">// tips：1.外部不可操作f()，也就没有被置null的可能；</span></div><div class="line"><span class="keyword">var</span> factorial = (<span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params">num</span>)</span>&#123;</div><div class="line">    <span class="keyword">if</span>(num &lt;= <span class="number">1</span>)&#123;</div><div class="line">        <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">    &#125;<span class="keyword">else</span>&#123;</div><div class="line">        <span class="keyword">return</span> num * f(num - <span class="number">1</span>);</div><div class="line">    &#125;</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="keyword">var</span> anotherFactorial = factorial;</div><div class="line">factorial = <span class="literal">null</span>;</div><div class="line"><span class="built_in">console</span>.log(anotherFactorial(<span class="number">4</span>));<span class="comment">//24</span></div></pre></td></tr></table></figure>
       
     </div>
     
@@ -370,9 +369,7 @@
           
             <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
           
-            <a href="/tags/对象定义/" rel="tag"># 对象定义</a>
-          
-            <a href="/tags/对象读取/" rel="tag"># 对象读取</a>
+            <a href="/tags/递归/" rel="tag"># 递归</a>
           
         </div>
       
@@ -385,14 +382,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/09/17/JavaScript中实现继承的6种方式及优缺点对比/" rel="next" title="JavaScript中实现继承的6种方式及优缺点对比">
+                <i class="fa fa-chevron-left"></i> JavaScript中实现继承的6种方式及优缺点对比
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/09/16/JavaScript中创建对象的8种方式及优缺点对比/" rel="prev" title="JavaScript中创建对象的8中方式及优缺点对比">
-                JavaScript中创建对象的8中方式及优缺点对比 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/09/24/JavaScript中的闭包/" rel="prev" title="JavaScript中的闭包">
+                JavaScript中的闭包 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
