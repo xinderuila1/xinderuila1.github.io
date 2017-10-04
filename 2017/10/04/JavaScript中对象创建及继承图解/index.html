@@ -79,7 +79,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="JavaScript,对象创建,继承,图解," />
+  <meta name="keywords" content="JavaScript,继承,对象创建,图解," />
 
 
 
@@ -95,17 +95,17 @@
 
 
 
-<meta name="keywords" content="JavaScript,对象创建,继承,图解">
+<meta name="keywords" content="JavaScript,继承,对象创建,图解">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript中对象创建及继承图解">
 <meta property="og:url" content="http://yoursite.com/2017/10/04/JavaScript中对象创建及继承图解/index.html">
 <meta property="og:site_name" content="Xinderuila&#39;s Blog">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://sh-btfs-v2-yun-ftn.weiyun.com/ftn_handler/f8b16cc012df2ed13eba44721bbe7895a740dc65779509ccd4add2eee9ac4fb7a66ddfb988d65e86afbd2537db6940525f91ac85611684d02ce3a71b3ed3597e/JavaScript%E4%B8%AD%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E5%8F%8A%E7%BB%A7%E6%89%BF%E5%9B%BE%E8%A7%A3.png?fname=JavaScript%E4%B8%AD%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E5%8F%8A%E7%BB%A7%E6%89%BF%E5%9B%BE%E8%A7%A3.png&from=30111&version=2.0.0.2&uin=705725825">
-<meta property="og:updated_time" content="2017-10-04T12:05:14.613Z">
+<meta property="og:image" content="https://sh-btfs-v2-yun-ftn.weiyun.com/ftn_handler/96f891c1fa142e9d56dc340b35990c89e600e12b49fc4c9367797a380dea5d5dc788f84622d30e9f9d588d963a7fe9c83fd4008b4687e1cfe00ca387b06b46f6/JavaScript%E4%B8%AD%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E5%8F%8A%E7%BB%A7%E6%89%BF%E5%9B%BE%E8%A7%A3.png?fname=JavaScript%E4%B8%AD%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E5%8F%8A%E7%BB%A7%E6%89%BF%E5%9B%BE%E8%A7%A3.png&from=30111&version=2.0.0.2&uin=705725825">
+<meta property="og:updated_time" content="2017-10-04T12:17:48.425Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript中对象创建及继承图解">
-<meta name="twitter:image" content="https://sh-btfs-v2-yun-ftn.weiyun.com/ftn_handler/f8b16cc012df2ed13eba44721bbe7895a740dc65779509ccd4add2eee9ac4fb7a66ddfb988d65e86afbd2537db6940525f91ac85611684d02ce3a71b3ed3597e/JavaScript%E4%B8%AD%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E5%8F%8A%E7%BB%A7%E6%89%BF%E5%9B%BE%E8%A7%A3.png?fname=JavaScript%E4%B8%AD%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E5%8F%8A%E7%BB%A7%E6%89%BF%E5%9B%BE%E8%A7%A3.png&from=30111&version=2.0.0.2&uin=705725825">
+<meta name="twitter:image" content="https://sh-btfs-v2-yun-ftn.weiyun.com/ftn_handler/96f891c1fa142e9d56dc340b35990c89e600e12b49fc4c9367797a380dea5d5dc788f84622d30e9f9d588d963a7fe9c83fd4008b4687e1cfe00ca387b06b46f6/JavaScript%E4%B8%AD%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E5%8F%8A%E7%BB%A7%E6%89%BF%E5%9B%BE%E8%A7%A3.png?fname=JavaScript%E4%B8%AD%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E5%8F%8A%E7%BB%A7%E6%89%BF%E5%9B%BE%E8%A7%A3.png&from=30111&version=2.0.0.2&uin=705725825">
 
 
 
@@ -325,7 +325,7 @@
       
 
       
-        <p><img src="https://sh-btfs-v2-yun-ftn.weiyun.com/ftn_handler/f8b16cc012df2ed13eba44721bbe7895a740dc65779509ccd4add2eee9ac4fb7a66ddfb988d65e86afbd2537db6940525f91ac85611684d02ce3a71b3ed3597e/JavaScript%E4%B8%AD%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E5%8F%8A%E7%BB%A7%E6%89%BF%E5%9B%BE%E8%A7%A3.png?fname=JavaScript%E4%B8%AD%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E5%8F%8A%E7%BB%A7%E6%89%BF%E5%9B%BE%E8%A7%A3.png&amp;from=30111&amp;version=2.0.0.2&amp;uin=705725825" alt="JavaScript中对象创建及继承图解"></p>
+        <p><img src="https://sh-btfs-v2-yun-ftn.weiyun.com/ftn_handler/96f891c1fa142e9d56dc340b35990c89e600e12b49fc4c9367797a380dea5d5dc788f84622d30e9f9d588d963a7fe9c83fd4008b4687e1cfe00ca387b06b46f6/JavaScript%E4%B8%AD%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E5%8F%8A%E7%BB%A7%E6%89%BF%E5%9B%BE%E8%A7%A3.png?fname=JavaScript%E4%B8%AD%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E5%8F%8A%E7%BB%A7%E6%89%BF%E5%9B%BE%E8%A7%A3.png&amp;from=30111&amp;version=2.0.0.2&amp;uin=705725825" alt="JavaScript中对象创建及继承图解"></p>
 
       
     </div>
@@ -369,9 +369,9 @@
           
             <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
           
-            <a href="/tags/对象创建/" rel="tag"># 对象创建</a>
-          
             <a href="/tags/继承/" rel="tag"># 继承</a>
+          
+            <a href="/tags/对象创建/" rel="tag"># 对象创建</a>
           
             <a href="/tags/图解/" rel="tag"># 图解</a>
           
