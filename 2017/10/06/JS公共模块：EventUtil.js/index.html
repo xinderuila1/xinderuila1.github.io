@@ -79,7 +79,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="JavaScript,对象创建,继承,图解," />
+  <meta name="keywords" content="JS公共模块,EventUtil.js," />
 
 
 
@@ -95,17 +95,18 @@
 
 
 
-<meta name="keywords" content="JavaScript,对象创建,继承,图解">
+<meta name="description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748// 封装出一些跨浏览器的事件常用操作var EventUtil = &amp;#123;    addHandler: function(element,type,handler)&amp;#123;        if(element.a">
+<meta name="keywords" content="JS公共模块,EventUtil.js">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript中对象创建及继承图解">
-<meta property="og:url" content="http://yoursite.com/2017/10/04/JavaScript中对象创建及继承图解/index.html">
+<meta property="og:title" content="JS公共模块：EventUtil.js">
+<meta property="og:url" content="http://yoursite.com/2017/10/06/JS公共模块：EventUtil.js/index.html">
 <meta property="og:site_name" content="Xinderuila&#39;s Blog">
+<meta property="og:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748// 封装出一些跨浏览器的事件常用操作var EventUtil = &amp;#123;    addHandler: function(element,type,handler)&amp;#123;        if(element.a">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://r.photo.store.qq.com/psb?/V11bIMnb3yIup5/5BTSA63bV6jNCKSIoaZYBNhnTrEbtbVc.lzDjuUOnok!/r/dPMAAAAAAAAA&save=1&d=1">
-<meta property="og:updated_time" content="2017-10-06T06:54:17.586Z">
+<meta property="og:updated_time" content="2017-10-06T06:51:06.765Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JavaScript中对象创建及继承图解">
-<meta name="twitter:image" content="http://r.photo.store.qq.com/psb?/V11bIMnb3yIup5/5BTSA63bV6jNCKSIoaZYBNhnTrEbtbVc.lzDjuUOnok!/r/dPMAAAAAAAAA&save=1&d=1">
+<meta name="twitter:title" content="JS公共模块：EventUtil.js">
+<meta name="twitter:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748// 封装出一些跨浏览器的事件常用操作var EventUtil = &amp;#123;    addHandler: function(element,type,handler)&amp;#123;        if(element.a">
 
 
 
@@ -135,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/10/04/JavaScript中对象创建及继承图解/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/10/06/JS公共模块：EventUtil.js/"/>
 
 
 
 
 
-  <title>JavaScript中对象创建及继承图解 | Xinderuila's Blog</title>
+  <title>JS公共模块：EventUtil.js | Xinderuila's Blog</title>
   
 
 
@@ -258,7 +259,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/04/JavaScript中对象创建及继承图解/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/06/JS公共模块：EventUtil.js/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yu Gao">
@@ -275,7 +276,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">JavaScript中对象创建及继承图解</h1>
+          <h1 class="post-title" itemprop="name headline">JS公共模块：EventUtil.js</h1>
         
 
         <div class="post-meta">
@@ -287,8 +288,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-04T20:02:58+08:00">
-                2017-10-04
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-06T14:50:58+08:00">
+                2017-10-06
               </time>
             
 
@@ -325,8 +326,7 @@
       
 
       
-        <p><img src="http://r.photo.store.qq.com/psb?/V11bIMnb3yIup5/5BTSA63bV6jNCKSIoaZYBNhnTrEbtbVc.lzDjuUOnok!/r/dPMAAAAAAAAA&amp;save=1&amp;d=1" alt="JavaScript中对象创建及继承图解"></p>
-
+        <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 封装出一些跨浏览器的事件常用操作</span></div><div class="line"><span class="keyword">var</span> EventUtil = &#123;</div><div class="line">    addHandler: <span class="function"><span class="keyword">function</span>(<span class="params">element,type,handler</span>)</span>&#123;</div><div class="line">        <span class="keyword">if</span>(element.addEventListener)&#123;</div><div class="line">            element.addEventListener(type,handler,<span class="literal">false</span>);</div><div class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(element.attachEvent)&#123;</div><div class="line">            element.attachEvent(<span class="string">"on"</span> + type,handler);</div><div class="line">        &#125;<span class="keyword">else</span>&#123;</div><div class="line">            element[<span class="string">"on"</span> + type] = handler;</div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line">    getEvent: <span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</div><div class="line">        <span class="keyword">return</span> event ? event : <span class="built_in">window</span>.event;</div><div class="line">    &#125;,</div><div class="line">    getTarget: <span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</div><div class="line">        <span class="keyword">return</span> event.target || event.srcElement;</div><div class="line">    &#125;,</div><div class="line">    preventDefault: <span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</div><div class="line">        <span class="keyword">if</span>(event.preventDefault)&#123;</div><div class="line">            event.preventDefault();</div><div class="line">        &#125;<span class="keyword">else</span>&#123;</div><div class="line">            event.returnValue = <span class="literal">false</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line">    removeHandler: <span class="function"><span class="keyword">function</span>(<span class="params">element,type,handler</span>)</span>&#123;</div><div class="line">        <span class="keyword">if</span>(element.removeEventListener)&#123;</div><div class="line">            element.removeEventListener(type,handler);</div><div class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(element.detachEvent)&#123;</div><div class="line">            element.detachEvent(<span class="string">"on"</span> + type,handler);</div><div class="line">        &#125;<span class="keyword">else</span>&#123;</div><div class="line">            element[<span class="string">"on"</span> + type] = <span class="literal">null</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line">    stopPropagation: <span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</div><div class="line">        <span class="keyword">if</span>(event.stopPropagation)&#123;</div><div class="line">            event.stopPropagation();</div><div class="line">        &#125;<span class="keyword">else</span>&#123;</div><div class="line">            event.cancelBubble = <span class="literal">true</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line">    getCharCode: <span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;<span class="comment">//返回字符按键的ASCII编码，非字符按键返回0</span></div><div class="line">        <span class="keyword">if</span>(<span class="keyword">typeof</span> event.charCode == <span class="string">"number"</span>)&#123;</div><div class="line">            <span class="keyword">return</span> event.charCode;</div><div class="line">        &#125;<span class="keyword">else</span>&#123;</div><div class="line">            <span class="keyword">return</span> event.keyCode;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
       
     </div>
     
@@ -367,13 +367,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+            <a href="/tags/JS公共模块/" rel="tag"># JS公共模块</a>
           
-            <a href="/tags/对象创建/" rel="tag"># 对象创建</a>
-          
-            <a href="/tags/继承/" rel="tag"># 继承</a>
-          
-            <a href="/tags/图解/" rel="tag"># 图解</a>
+            <a href="/tags/EventUtil-js/" rel="tag"># EventUtil.js</a>
           
         </div>
       
@@ -386,8 +382,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/10/03/DOM的事件对象/" rel="next" title="DOM事件对象">
-                <i class="fa fa-chevron-left"></i> DOM事件对象
+              <a href="/2017/10/06/DOM的事件类型/" rel="next" title="DOM事件类型">
+                <i class="fa fa-chevron-left"></i> DOM事件类型
               </a>
             
           </div>
@@ -395,10 +391,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/10/06/DOM的事件类型/" rel="prev" title="DOM事件类型">
-                DOM事件类型 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
