@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="错误处理," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+<meta name="keywords" content="错误处理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="错误处理">
+<meta property="og:url" content="http://yoursite.com/2017/10/15/错误处理/index.html">
+<meta property="og:site_name" content="Xinderuila&#39;s Blog">
+<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-10-15T07:55:38.536Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="错误处理">
+<meta name="twitter:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/10/15/错误处理/"/>
+
+
+
+
+
+  <title>错误处理 | Xinderuila's Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Xinderuila's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/15/错误处理/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yu Gao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Xinderuila's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">错误处理</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-15T15:55:58+08:00">
+                2017-10-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div><div class="line">188</div><div class="line">189</div><div class="line">190</div><div class="line">191</div><div class="line">192</div><div class="line">193</div><div class="line">194</div><div class="line">195</div><div class="line">196</div><div class="line">197</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!-- </span></div><div class="line"><span class="comment">try-catch语句</span></div><div class="line"><span class="comment">1.try块中的任何代码发生错误，会立即退出try块，跳转到执行catch块，catch块执行完，try-catch整体以外的代码仍旧会被执行；</span></div><div class="line"><span class="comment">2.catch块必须给定参数对象，即使你不调用它；</span></div><div class="line"><span class="comment">3.catch块参数对象的属性中，只有message属性是跨浏览器的，虽然具体的message属性值会有不同；</span></div><div class="line"><span class="comment">4.finally子句一经使用，其块内的代码一定会被执行，而不论try-catch块中包含什么代码（即使是return语句）；</span></div><div class="line"><span class="comment">5.被try-catch截获的错误，不会到浏览器的console窗口</span></div><div class="line"><span class="comment">  未被try-catch截获的错误，则会到浏览器的console窗口（该错误被浏览器以默认的方式处理掉）</span></div><div class="line"><span class="comment">6.try-catch的使用场景：</span></div><div class="line"><span class="comment">  6.1.适合处理我们无法控制的错误；例如，对第三方外部库的调用大可放在try-catch块中；</span></div><div class="line"><span class="comment">  6.2.预先知道可能发生错误的代码，不适合用try-catch；</span></div><div class="line"><span class="comment">--&gt;</span></div><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>try-catch语句<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"myBtn"</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"try-catch语句"</span>&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span> = <span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"EventUtil.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="javascript">            <span class="function"><span class="keyword">function</span> <span class="title">testFinally</span>(<span class="params"></span>)</span>&#123;</span></div><div class="line"><span class="javascript">                <span class="keyword">try</span>&#123;</span></div><div class="line"><span class="javascript">                    <span class="keyword">return</span> <span class="number">2</span>;</span></div><div class="line"><span class="javascript">                &#125;<span class="keyword">catch</span>(error)&#123;</span></div><div class="line"><span class="javascript">                    <span class="keyword">return</span> <span class="number">1</span>;</span></div><div class="line"><span class="javascript">                &#125;<span class="keyword">finally</span>&#123;</span></div><div class="line"><span class="javascript">                    <span class="keyword">return</span> <span class="number">0</span>;</span></div><div class="line"><span class="undefined">                &#125;</span></div><div class="line"><span class="undefined">            &#125;</span></div><div class="line"><span class="javascript">            <span class="keyword">var</span> btn = <span class="built_in">document</span>.getElementById(<span class="string">"myBtn"</span>);</span></div><div class="line"><span class="javascript">            EventUtil.addHandler(btn,<span class="string">"click"</span>,<span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</span></div><div class="line"><span class="javascript">                <span class="keyword">var</span> ret = testFinally();</span></div><div class="line"><span class="undefined">                alert(ret);</span></div><div class="line"><span class="undefined">            &#125;);</span></div><div class="line"><span class="undefined">        </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div><div class="line"></div><div class="line"><span class="comment">&lt;!-- </span></div><div class="line"><span class="comment">抛出错误</span></div><div class="line"><span class="comment">1.使用throw操作符随时抛出特定类型的自定义错误，后续可选是否用try-catch捕获；</span></div><div class="line"><span class="comment">  1.1.浏览器默认抛出的错误，信息不够详尽，对复杂的web应用程序调试是不够的；</span></div><div class="line"><span class="comment">  1.2.带有适当信息的自定义错误能够显著提升代码的可维护性；</span></div><div class="line"><span class="comment">  1.3.应该只捕获你确切知道如何处理的错误；</span></div><div class="line"><span class="comment">  1.4.理想的情况下：我们可以通过构建一套错误处理机制确保代码中只发生自己抛出的错误；</span></div><div class="line"><span class="comment">2.catch块传入参数对象的类型：</span></div><div class="line"><span class="comment">  2.1.Error:基类型，供开发人员抛出自定义错误；</span></div><div class="line"><span class="comment">  2.2.EvalError:在使用eval()函数而发生异常时被抛出。常见的有：没有把eval()当成函数调用</span></div><div class="line"><span class="comment">  2.3.RangeError:数值超出相应范围；</span></div><div class="line"><span class="comment">  2.4.RefrenceError:访问不存在的变量时；</span></div><div class="line"><span class="comment">  2.5.SyntaxError:把语法错误的JS代码传入eval()函数；</span></div><div class="line"><span class="comment">  2.6.TypeError:执行特定类型的操作，而变量的类型并不符合要求；</span></div><div class="line"><span class="comment">  2.7.URIError:在使用encodeURI()、decodeURI()，而URI格式不正确；</span></div><div class="line"><span class="comment">3.JS代码常见的三类错误</span></div><div class="line"><span class="comment">  3.1.类型转换错误</span></div><div class="line"><span class="comment">     3.1.1.操作符==、!=作用在不同类型上（自动转换，不能被try-catch捕获）；</span></div><div class="line"><span class="comment">     3.1.2.if条件语句参数不是bool类型（自动转换，不能被try-catch捕获）；</span></div><div class="line"><span class="comment">  3.2.数据类型错误</span></div><div class="line"><span class="comment">     3.2.1.执行特定类型的操作，而变量的类型并不符合要求；</span></div><div class="line"><span class="comment">     3.2.2.可以被try-catch捕获，捕获的error类型是：TypeError；</span></div><div class="line"><span class="comment">  3.3.通信错误</span></div><div class="line"><span class="comment">     3.3.1.格式不正确的URL或发送了格式不正确的数据；</span></div><div class="line"><span class="comment">     3.3.2.服务器相应的数据不正确；</span></div><div class="line"><span class="comment">--&gt;</span></div><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>抛出错误<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"myBtnEvalError"</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"EvalError"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"myBtnRangeError"</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"RangeError"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"myBtnRefrenceError"</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"RefrenceError"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"myBtnSyntaxError"</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"SyntaxError"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"myBtnTypeError"</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"TypeError"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"myBtnCustomError"</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"CustomError"</span>&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span> = <span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"EventUtil.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="javascript">            <span class="function"><span class="keyword">function</span> <span class="title">CustomError</span>(<span class="params">message</span>)</span>&#123;</span></div><div class="line"><span class="javascript">                <span class="keyword">this</span>.name = <span class="string">"CustomError"</span>;</span></div><div class="line"><span class="javascript">                <span class="keyword">this</span>.message = message;</span></div><div class="line"><span class="undefined">            &#125;</span></div><div class="line"><span class="javascript">            CustomError.prototype = <span class="keyword">new</span> <span class="built_in">Error</span>();</span></div><div class="line"><span class="undefined"></span></div><div class="line"><span class="javascript">            <span class="function"><span class="keyword">function</span> <span class="title">ErrorHandler</span>(<span class="params">error</span>)</span>&#123;</span></div><div class="line"><span class="javascript">                <span class="keyword">if</span>(error <span class="keyword">instanceof</span> <span class="built_in">EvalError</span>)&#123;</span></div><div class="line"><span class="javascript">                    alert(<span class="string">"捕获EvalError"</span>);</span></div><div class="line"><span class="javascript">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(error <span class="keyword">instanceof</span> <span class="built_in">RangeError</span>)&#123;</span></div><div class="line"><span class="javascript">                    alert(<span class="string">"捕获RangeError"</span>);</span></div><div class="line"><span class="javascript">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(error <span class="keyword">instanceof</span> <span class="built_in">ReferenceError</span>)&#123;</span></div><div class="line"><span class="javascript">                    alert(<span class="string">"捕获ReferenceError"</span>);</span></div><div class="line"><span class="javascript">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(error <span class="keyword">instanceof</span> <span class="built_in">SyntaxError</span>)&#123;</span></div><div class="line"><span class="javascript">                    alert(<span class="string">"捕获SyntaxError"</span>);</span></div><div class="line"><span class="javascript">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(error <span class="keyword">instanceof</span> <span class="built_in">TypeError</span>)&#123;</span></div><div class="line"><span class="javascript">                    alert(<span class="string">"捕获TypeError"</span>);</span></div><div class="line"><span class="javascript">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(error <span class="keyword">instanceof</span> CustomError)&#123;</span></div><div class="line"><span class="javascript">                    alert(<span class="string">"捕获CustomError"</span>);</span></div><div class="line"><span class="javascript">                &#125;<span class="keyword">else</span>&#123;</span></div><div class="line"><span class="javascript">                    alert(<span class="string">"无法识别的error类型"</span>);</span></div><div class="line"><span class="undefined">                &#125;</span></div><div class="line"><span class="undefined">            &#125;</span></div><div class="line"><span class="undefined"></span></div><div class="line"><span class="javascript">            <span class="keyword">var</span> myBtnEvalError = <span class="built_in">document</span>.getElementById(<span class="string">"myBtnEvalError"</span>);</span></div><div class="line"><span class="javascript">            <span class="keyword">var</span> myBtnRangeError = <span class="built_in">document</span>.getElementById(<span class="string">"myBtnRangeError"</span>);</span></div><div class="line"><span class="javascript">            <span class="keyword">var</span> myBtnRefrenceError = <span class="built_in">document</span>.getElementById(<span class="string">"myBtnRefrenceError"</span>);</span></div><div class="line"><span class="javascript">            <span class="keyword">var</span> myBtnSyntaxError = <span class="built_in">document</span>.getElementById(<span class="string">"myBtnSyntaxError"</span>);</span></div><div class="line"><span class="javascript">            <span class="keyword">var</span> myBtnTypeError = <span class="built_in">document</span>.getElementById(<span class="string">"myBtnTypeError"</span>);</span></div><div class="line"><span class="javascript">            <span class="keyword">var</span> myBtnCustomError = <span class="built_in">document</span>.getElementById(<span class="string">"myBtnCustomError"</span>);</span></div><div class="line"><span class="javascript">            EventUtil.addHandler(myBtnEvalError,<span class="string">"click"</span>,<span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</span></div><div class="line"><span class="javascript">                alert(<span class="built_in">eval</span>(<span class="number">5</span> + <span class="number">10</span>));<span class="comment">//15</span></span></div><div class="line"><span class="javascript">                <span class="keyword">new</span> <span class="built_in">eval</span>();<span class="comment">//chrome：TypeError: eval is not a constructor</span></span></div><div class="line"><span class="javascript">                <span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>)</span>&#123;</span></div><div class="line"><span class="javascript">                    <span class="keyword">return</span> <span class="number">10</span>;</span></div><div class="line"><span class="undefined">                &#125;</span></div><div class="line"><span class="javascript">                <span class="built_in">eval</span> = foo;<span class="comment">//chrome：成功执行，未抛出错误</span></span></div><div class="line"><span class="javascript">                alert(<span class="built_in">eval</span>());<span class="comment">//10</span></span></div><div class="line"><span class="javascript">                alert(<span class="built_in">eval</span>(<span class="number">5</span> + <span class="number">10</span>));<span class="comment">//10，未抛出错误</span></span></div><div class="line"><span class="undefined">            &#125;);</span></div><div class="line"><span class="javascript">            EventUtil.addHandler(myBtnRangeError,<span class="string">"click"</span>,<span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</span></div><div class="line"><span class="javascript">                <span class="keyword">var</span> items1 = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">-20</span>);<span class="comment">//chrome：Uncaught RangeError: Invalid array length</span></span></div><div class="line"><span class="javascript">                <span class="keyword">var</span> items2 = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="built_in">Number</span>.MAX_VALUE);<span class="comment">//chrome：Uncaught RangeError: Invalid array length</span></span></div><div class="line"><span class="undefined">            &#125;);</span></div><div class="line"><span class="javascript">            EventUtil.addHandler(myBtnRefrenceError,<span class="string">"click"</span>,<span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</span></div><div class="line"><span class="javascript">                <span class="keyword">try</span>&#123;</span></div><div class="line"><span class="javascript">                    <span class="keyword">var</span> obj = x;<span class="comment">//已被try-catch捕获处理，不会到浏览器那一级</span></span></div><div class="line"><span class="javascript">                &#125;<span class="keyword">catch</span>(error)&#123;</span></div><div class="line"><span class="javascript">                    ErrorHandler(error);<span class="comment">//捕获ReferenceError</span></span></div><div class="line"><span class="undefined">                &#125;</span></div><div class="line"><span class="undefined">            &#125;);</span></div><div class="line"><span class="javascript">            EventUtil.addHandler(myBtnSyntaxError,<span class="string">"click"</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></div><div class="line"><span class="javascript">                <span class="built_in">eval</span>(<span class="string">"a ++ b"</span>);<span class="comment">//chrome：Uncaught SyntaxError: Unexpected identifier</span></span></div><div class="line"><span class="undefined">            &#125;);</span></div><div class="line"><span class="javascript">            EventUtil.addHandler(myBtnTypeError,<span class="string">"click"</span>,<span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</span></div><div class="line"><span class="javascript">                <span class="keyword">var</span> o = <span class="keyword">new</span> <span class="number">10</span>;<span class="comment">//chrome：Uncaught TypeError: 10 is not a constructor</span></span></div><div class="line"><span class="javascript">                alert(<span class="string">"name"</span> <span class="keyword">in</span> <span class="literal">true</span>);<span class="comment">//chrome：Uncaught TypeError: Cannot use 'in' operator to search for 'name' in true</span></span></div><div class="line"><span class="javascript">                <span class="built_in">Function</span>.prototype.toString.call(<span class="string">"name"</span>);<span class="comment">//chrome：Uncaught TypeError: Function.prototype.toString requires that 'this' be a Function</span></span></div><div class="line"><span class="undefined">            &#125;);</span></div><div class="line"><span class="javascript">            EventUtil.addHandler(myBtnCustomError,<span class="string">"click"</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></div><div class="line"><span class="javascript">                <span class="function"><span class="keyword">function</span> <span class="title">process</span>(<span class="params">values</span>)</span>&#123;</span></div><div class="line"><span class="javascript">                    <span class="keyword">if</span>(!(values <span class="keyword">instanceof</span> <span class="built_in">Array</span>))&#123;<span class="comment">//在浏览器默认的错误处理之前，抛出了带有自定义信息的错误，便于调试</span></span></div><div class="line"><span class="javascript">                        <span class="keyword">throw</span> <span class="keyword">new</span> CustomError(<span class="string">"函数process()的参数类型必须是Array"</span>);</span></div><div class="line"><span class="undefined">                    &#125;</span></div><div class="line"><span class="undefined">                    values.sort();</span></div><div class="line"><span class="undefined">                &#125;</span></div><div class="line"><span class="javascript">                <span class="keyword">var</span> array = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="string">"cc"</span>,<span class="string">"bb"</span>,<span class="string">"aa"</span>);</span></div><div class="line"><span class="undefined">                process(array);</span></div><div class="line"><span class="undefined">                alert(array);</span></div><div class="line"><span class="undefined"></span></div><div class="line"><span class="javascript">                <span class="keyword">try</span>&#123;</span></div><div class="line"><span class="javascript">                    process(<span class="string">"aa"</span>);</span></div><div class="line"><span class="javascript">                &#125;<span class="keyword">catch</span>(error)&#123;</span></div><div class="line"><span class="undefined">                    ErrorHandler(error);</span></div><div class="line"><span class="undefined">                &#125;</span></div><div class="line"><span class="undefined">            &#125;);</span></div><div class="line"><span class="undefined">        </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div><div class="line"></div><div class="line"><span class="comment">&lt;!-- </span></div><div class="line"><span class="comment">错误事件</span></div><div class="line"><span class="comment">1.window对象上的error事件</span></div><div class="line"><span class="comment">  1.1.不遵循DOM2格式，必须通过DOM0技术指定其事件处理程序；</span></div><div class="line"><span class="comment">  1.2.不会创建event对象</span></div><div class="line"><span class="comment">2.image元素上的error事件;</span></div><div class="line"><span class="comment">  2.1.遵循DOM2格式；</span></div><div class="line"><span class="comment">  2.2.会创建event对象；</span></div><div class="line"><span class="comment">--&gt;</span></div><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>错误事件<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span> = <span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"EventUtil.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="javascript">            <span class="comment">//window对象上的error事件</span></span></div><div class="line"><span class="javascript">            <span class="comment">//1.chrome测试：return false并不管用，仍然会报告错误；</span></span></div><div class="line"><span class="javascript">            <span class="built_in">window</span>.onerror = <span class="function"><span class="keyword">function</span>(<span class="params">message,url,line</span>)</span>&#123;</span></div><div class="line"><span class="undefined">                alert(message);</span></div><div class="line"><span class="javascript">                <span class="keyword">return</span> <span class="literal">false</span>;</span></div><div class="line"><span class="undefined">            &#125;</span></div><div class="line"><span class="undefined"></span></div><div class="line"><span class="javascript">            <span class="comment">//image元素上的error事件</span></span></div><div class="line"><span class="javascript">            <span class="keyword">var</span> image = <span class="keyword">new</span> Image();</span></div><div class="line"><span class="javascript">            EventUtil.addHandler(image,<span class="string">"load"</span>,<span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</span></div><div class="line"><span class="javascript">                alert(<span class="string">"图像加载完毕"</span>);</span></div><div class="line"><span class="undefined">            &#125;);</span></div><div class="line"><span class="javascript">            EventUtil.addHandler(image,<span class="string">"error"</span>,<span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</span></div><div class="line"><span class="javascript">                alert(<span class="string">"图像加载失败"</span>);</span></div><div class="line"><span class="undefined">            &#125;);</span></div><div class="line"><span class="javascript">            image.src = <span class="string">"test.jpg"</span>;<span class="comment">//尝试load不存在的图像</span></span></div><div class="line"><span class="undefined">        </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Yu Gao 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/错误处理/" rel="tag"># 错误处理</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/08/DOM的内存和性能/" rel="next" title="DOM内存和性能">
+                <i class="fa fa-chevron-left"></i> DOM内存和性能
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          
+            <img class="site-author-image" itemprop="image"
+              src="/images/avatar.jpg"
+              alt="Yu Gao" />
+          
+            <p class="site-author-name" itemprop="name">Yu Gao</p>
+            <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+            
+              <a href="/archives/">
+            
+                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">18</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/xinderuila1" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>GitHub</a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yu Gao</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.2</div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
